@@ -1,3 +1,3 @@
-# 软件测试期末复习笔记 (PPT驱动)
+# PPT-Driven Notes of SQAT
 
 🚧 TBD
