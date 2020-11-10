@@ -432,3 +432,67 @@ Additional modules are integrated in each cycle, tests are performed and defects
 
 
 
+## 6. System Testing
+
+is testing conducted on a complete, integrated system to evaluate the system's compliance with its requirements specifications. 
+
+falls within the scope of black box testing, and as such, should require no knowledge of the inner design of the code or logic. 
+
+
+
+### Why necesseray
+
+- Some properties only verifiable at system level
+  - Installation , usability, compatibility, etc. 
+- We may involve users at this level
+  - Use cases may not map to any specific integration unit
+  - Use of alpha and beta tests
+- The environment of the system is taken into account
+
+
+
+![image-20201111002231358](assets/image-20201111002231358.png)
+
+
+
+### Methods
+
+- System functionality Testing
+  - Automate tests where possible
+  - Create test scripts for other areas where a user will perform manual testing 
+    - Detailed script that specifies what is to be done for each test case
+    - A general script that talks about things to test, but does not specify every item in the test
+    - Exploratory Testing 
+
+- GUI Testing
+
+  ​		 Difficulties:
+
+  - Possible interface test space is massive.
+  - Event-driven characteristics
+  - GUI test coverage is different from traditional structured coverage
+    - Test automation software
+
+  - Bad design mixes the interface with the ‘logic’ of the application. This can be harder to test. 
+    - Design issue: create a separate module for the logic of the application
+
+- Usability Testing and Accessibility Testing 
+
+- Performance Testing 
+  - is used to determine the speed or effectiveness of a computer, network, software program or device. 
+    - can involve quantitative tests done in a lab
+  - Qualitative attributes such as reliability, scalability and interoperability may also be evaluated
+  - Goals: eliminate bottlenecks and improve system reliability 
+
+- Recovery Testing
+
+  - Is the application able to recover from crashes, hardware failures and other similar problems.
+
+  - Force problems with the system and determine how the system responds
+
+  - Does the system detect issues and restart if there was system crash?
+
+  - If manual restart is required, are there mechanisms in place so that it can be started within any specified time limits 
+
+- Installation Testing
+- Compatibility Testing
