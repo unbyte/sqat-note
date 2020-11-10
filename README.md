@@ -206,6 +206,12 @@ Basic principles of path coverage:
 
 
 
+## Relationship between Testings
+
+![image-20201111000146394](assets/image-20201111000146394.png)
+
+
+
 ## 4. Unit Testing
 
 ### Definition
@@ -354,6 +360,75 @@ is used to exercise the SUT. It either receives data or loads tests. It runs tho
 
 - Fake Object
   - An object that replaces the functionality of the DOC
+
+
+
+## 5. Integration Testing
+
+is the phase of software testing in which individual software **modules** are combined and tested as a **group**. 
+
+### Definition
+
+Integration testing is testing a unit of work without having full control over all of it and using one or more of its real dependencies, such as time, network, database, threads, random number generators, and so on.
+
+
+
+### Cycle
+
+Integration is conducted incrementally as a series of test cycles
+
+Additional modules are integrated in each cycle, tests are performed and defects noted and fixed, and continues until all modules are integrated.
+
+
+
+### Strategy
+
+- Big Bang
+  - Link all of the modules together as a system. 
+  - Limited need for test doubles and drivers 
+  - Difficult to isolate errors and identify where the problem occurs 
+  - Does not verify the interfaces across module boundaries
+  - Risk of late identification of problems
+
+- Top-Down
+  - As the system is constructed, test the interactions of modules from the ‘top’ down to the lower level modules. 
+  - top is the module that calls other modules
+  - Breadth-first and Depth-first approaches
+  - Test doubles can be used for some tests
+
+- Bottom-Up
+
+  - Start with bottom-level components, which have no, or minimal, dependencies.
+
+  - Move up through connections, verifying the interactions of modules.
+  - Driver modules used to test the integrated modules.
+  - It is likely that there is less need for Test Doubles because the lower levels will already exist.
+  - BUT – remember that we might use Test Doubles for other reasons
+
+- Mixed
+
+  - mixture of top-down and bottom-up 
+
+
+
+### When to run
+
+- Daily
+- In an iteration (e.g. two weeks) 
+- Automated tests
+- CI
+
+
+
+### Design
+
+- Similar issues to unit testing
+  - Good data
+  - Data to test errors 
+  - Undefined situations
+
+- Focus is on data that will be passed through the interface to other module
+  - We start from the view that the connected modules are working (tested at unit level)
 
 
 
