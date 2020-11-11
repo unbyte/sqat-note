@@ -496,3 +496,357 @@ falls within the scope of black box testing, and as such, should require no know
 
 - Installation Testing
 - Compatibility Testing
+
+
+
+## 7. Performance Testing
+
+ a form of non-functional testing
+
+
+
+### Smart Target
+
+**S**pecific, **M**easurable, **A**chievable, **R**elevant, **T**ime-based 
+
+
+
+### Timing
+
+Have a **stable code base**
+
+Code should have been **tested**
+
+
+
+### Key Performance Target
+
+Examples:
+
+- Availability or uptime – how long is the application able to run?
+
+- Concurrency – if there are multiple users, can the application support a required number?
+
+- Response time – for different tasks, what are the expected times? If there a previous version or other system to compare to?
+
+- Computer Use – e.g. CPU, Memory, File I/O, Disk 
+
+- Network Use, e.g. Data Volume, Data Throughput
+
+
+
+### Types of Performance Testing
+
+- **Pipe clean tests** – validate the different performance tests
+
+- **Volume test** – can the application process expected loads
+
+- **Stress test** – what happens if the application is given more work to do?
+
+- **Soak/stability** – extended use tests 
+
+- **Smoke tests** – focus on areas of change. Some people also use this term to refer to tests that check if the basic system is ready to test.
+
+- **Isolation** – focus on specific areas
+
+
+
+## 8. **Sofware QA and Test** Management
+
+### Software Development Methodology
+
+- Waterfall
+
+- Spiral
+
+- Incremental
+
+- Rapid Prototyping
+
+- Agile 
+  - Scrum
+  - XP
+
+
+
+### Why test
+
+- To have confidence that the system meets its requirements
+  - Customer satisfaction – meeting their business needs
+  - Developer satisfaction – customer sign-off (getting paid)
+
+- To produce a high-quality product
+
+- To reduce (minimize) the risk that we fail to achieve the above
+
+
+
+### Testing and Risk
+
+- Project Risks
+  - Supplier Issues – e.g. do we need information about components (hardware, software) from suppliers? 
+  - Organisation Issues – e.g. do we have staff available to work on the project? 
+  - Technical Issues – e.g. have we done something similar? Are we using a new toolkit? 
+
+- Product Risks 
+  - Failure prone software, incorrect functions, data migration issues, …
+
+- Level of Risk – probability of risk occurring*/impact if it did happen
+
+
+
+### Quality Assurance, 
+
+Manage the process (Quality Assurance, QA)
+
+- For example, detailed quality audit that checks if the specified processes are being followed
+
+- Focus on the process and not the product
+  - Production and review of test plans 
+  - Recording test results 
+  - Review of test results
+
+- Aiming to prevent issues
+
+
+
+### Quality Control
+
+Manage the product (Quality Control, QC) 
+
+- For example, testing and code reviews
+
+- Focus on product, identifying deficiencies and suggesting improvements
+
+- Aiming to detect issues
+
+
+
+### Quality
+
+![image-20201111104916892](assets/image-20201111104916892.png)
+
+
+
+### Software Standards
+
+- ISO 9001 – A set of standards about Quality Management 
+  - Encourages you to look at the whole organisation
+  - Encourages the need for management to take the lead
+  - Encourages putting the customer first 
+  - Encourages managing the risks
+
+- ISO/IEC/IEEE 29119 – Software Testing Standards (in 5 parts)
+  - Definition of good practice to follow for a testing process
+
+- ISO 25010 - Systems and software Quality Requirements and Evaluation
+
+**benefits**
+
+- Standards capture wisdom that is of value to the organisation
+
+- Standards provide a framework for defining what quality means in a particular setting
+
+- Standards assist continuity when work carried out by one person is taken up and continued by another.
+
+
+
+### Test Metrics
+
+Measure the progress of testing in an organisation and on projects 
+
+- Help to understand issues about project progress and testing 
+  - **Organisation** – general metrics to indicate quality, e.g. number of defects per thousand lines of code (KLOC)
+  - **Project**, e.g. Percentage of successful tests in a testing phase. 
+  - **Process**, e.g. statistics about when a defect is found.
+  - **Product**, e.g. test coverage
+
+- **Testability** – how easy is it to specify and perform tests? e.g. low test coverage suggest problems with the testabilty of the system
+
+
+
+### Use of Test Metrics
+
+- Early detection of issues
+  - Collecting the metrics can help to manage our process. For example, we can prompt people to fix bugs before adding more functionality 
+  - Make this part of your team’s quality process
+  - Review processes early 
+
+- Setting goals? 
+  - Performance – how many bugs a tester is expected to find a week
+  - How many bugs a developer can be assigned before they must fix bugs
+
+
+
+### Test Planning and Test Case Recording
+
+- Test Planning 
+  - Documents should be available to the whole team 
+  - Need an easy way to track changes to documents 
+  - Use version control software
+
+- Test Cases 
+  - Where should these be stored depends on the project, but you want an easy way for testers to enter and track test cases. 
+
+
+
+### Bug Report
+
+possible information: 
+
+- **Title** (short description) 
+
+- **Categories** (e.g. missing feature, incorrect operation, …)
+
+- **Detail** (long description)
+  - Actual results and expected results
+
+- **Steps to reproduce**
+  - Important to help users think through this part of a bug report.
+
+- **Test environment** (hardware, other processes, …)
+
+
+
+## 9. Design, Testing and Agile
+
+### Test-Driven Development (TDD)
+
+Write a test, before writing the code to pass that test
+
+- Write the minimum code to pass the test
+
+- User your tests as a safety net to catch errors as you add more code
+
+
+
+### Traffic light system
+
+![image-20201111112119511](assets/image-20201111112119511.png)
+
+
+
+### Pair Programming
+
+Two people work together to develop new features. 
+
+- Two people work with one computer
+
+- Two roles
+
+  - **Driver**
+    - Decides what to do and type
+    - Listens to the navigator for advice
+    - Makes sure the navigator understands what you are doing
+
+  - **Navigator**
+    - Asks questions to clarify
+    - Suggests alternative approaches
+    - Needs to understand fully what is being done
+    - Prepared to take over if the driver gets stuck
+
+- Share who controls the keyboard and mouse – swapping regularly
+
+- Add tests, then code
+
+
+
+**Advantages**
+
+- To increase code/design quality
+  - Pairing allows for continual review
+  - The reviewer is fully involved
+  - Pair reviewing is less intimidating than formal reviews
+  - Formal reviews still have their place…
+- Improved communication
+- More team members are familiar with the code
+- A way to train new team members
+
+
+
+**Disadvantages**
+
+- Risk of shared assumptions
+  - Experience
+
+- Personalities
+  - Expert, extrovert, novice,average, introvert
+
+- Workstation layout
+
+- Need for concentration
+
+- May not be a good idea to pair during exploration / spike work
+
+
+
+### Test Approaches
+
+- **Test Last** 
+  - Writing the tests after the implementation
+  - An established way to build and test software. 
+  - Produce something that seems to meet the requirements and then develop tests to try and find errors
+
+- **Test First** 
+  - Writing the tests early and use the tests to guide the development
+  - Example of Test-Driven Development 
+  - Write a test, and then write code to pass that test
+
+The research didn’t find any evidence to suggest a notable difference between a Test-First or Test-Last approach 
+
+
+
+### Refactor
+
+Refactoring is the process of **changing** **a software system** in such a way that it **does not alter the external behavior** of the code **yet improves its internal** **structure**. It is a **disciplined way** to clean up code that minimizes the chances of introducing bugs. In essence when you refactor you are **improving the design** **of the code after it has been written**.
+
+- Extract Method
+- Move Method
+- Replace Temp with Query
+
+
+
+### Is TDD really about analysis and design
+
+**Test-first coding is not a testing technique**
+
+- Analysis
+  - As you design the tests, you are required to think more about what new functionality the system needs.
+  - You start with a story, but in XP, TDD is used as part of the conversation to confirm the details of what is required
+
+- Design
+
+  - Similar issue for design. Once you decide on what should be done (the analysis), you need to decide what is changed about the system to do that. 
+
+  - What function/method will be added or changed?
+  - What situations does the code need to cope with (normal and exceptional)
+
+
+
+### Manifesto for Agile Software Development
+
+We are uncovering better ways of developing software by doing it and helping others do it. Through this work we have come to value:
+
+- **Individuals and interactions** over processes and tools
+
+- **Working software** over comprehensive documentation
+
+- **Customer collaboration** over contract negotiation
+
+- **Responding to change** over following a plan
+
+That is, while there is value in the items on the right, we value the items on the left more.
+
+
+
+
+### Design for easier test
+
+- Shorter methods and functions – less complexity
+
+- Code with low coupling and high cohesion
+
+- Separating application logic out of the user interface code
+
+
+
