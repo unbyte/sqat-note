@@ -1,6 +1,6 @@
 # PPT-Driven Notes of SQAT
 
-
+See [Mind Map](https://github.com/unbyte/sqat-note/blob/master/mindmap.pdf)
 
 ## 1. Introduction to Software QA and Testing
 
