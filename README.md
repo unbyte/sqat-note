@@ -802,7 +802,7 @@ Refactoring is the process of **changing** **a software system** in such a way t
 
 
 
-### Is TDD really about analysis and design
+### TDD is about analysis and design
 
 **Test-first coding is not a testing technique**
 
