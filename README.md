@@ -1,7 +1,3 @@
-🚧 TBD
-
-
-
 # PPT-Driven Notes of SQAT
 
 
@@ -850,3 +846,6 @@ That is, while there is value in the items on the right, we value the items on t
 
 
 
+---
+
+Done at 2020.11.11
